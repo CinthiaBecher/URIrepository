@@ -1,0 +1,23 @@
+N = int(input())
+i = 0
+
+while i < N:
+  calculo = 0
+  qtdeLinhas = int(input())
+  elemento = -1
+  for linhas in range(qtdeLinhas):
+    linha = input()
+    elemento = elemento + 1
+    Pletra = -1
+    for l in linha:
+      
+      Palfabeto = ord(l) - 65
+      
+      Elementodeentrada = elemento 
+
+      Pletra = Pletra + 1
+
+      calculo = calculo + Palfabeto + Elementodeentrada + Pletra
+
+  print(calculo) 
+  i += 1
