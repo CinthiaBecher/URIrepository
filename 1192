@@ -1,0 +1,16 @@
+N = int(input())
+
+for n in range(N):
+  caracteres = input()
+
+  if int(caracteres[0]) == int(caracteres[2]):
+    produto = int(caracteres[0]) * int(caracteres[2])
+    print(produto)
+  else:
+    Ascii = ord(str(caracteres[1]))
+    if Ascii >= 65 and Ascii <= 90:
+      subtração = int(caracteres[2]) - int(caracteres[0])
+      print(subtração)
+    elif Ascii >= 97 and Ascii <= 122: 
+      soma = int(caracteres[0]) + int(caracteres[2])
+      print(soma)
