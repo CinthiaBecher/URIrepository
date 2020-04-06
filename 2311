@@ -1,0 +1,20 @@
+n = int(input())
+i = 0
+while i < n:
+  nome = str(input())
+  Gd = float(input())
+  n1, n2, n3, n4, n5, n6, n7 = input().split()
+  n1 = float(n1)
+  n2 = float(n2)
+  n3 = float(n3)
+  n4 = float(n4)
+  n5 = float(n5)
+  n6 = float(n6)
+  n7 = float(n7) 
+
+  maior = max (n1, n2, n3, n4, n5, n6, n7)
+  menor = min (n1, n2, n3, n4, n5, n6, n7) 
+  soma = ((n1 + n2 + n3 + n4 + n5 + n6 + n7) - maior) - menor
+  resultado = soma * Gd
+  print (nome, "%.2f" % (resultado))
+  i = i + 1
