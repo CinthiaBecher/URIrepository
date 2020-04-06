@@ -1,0 +1,19 @@
+N = int(input())
+RPM = input().split()
+
+anterior = -1
+quebra = 0
+indicador = 0
+
+for r in RPM:
+  r = int(r)
+ 
+  indicador += 1
+ 
+  if r < anterior:
+    quebra = indicador
+    break
+
+  anterior = r
+
+print (quebra)
