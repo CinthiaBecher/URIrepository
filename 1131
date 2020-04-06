@@ -1,0 +1,29 @@
+vitoriai = 0
+vitoriag = 0
+empate = 0
+
+while True:
+  inter, gremio = input().split()
+  inter = int(inter)
+  gremio = int(gremio)
+  
+  if inter > gremio:
+    vitoriai += 1
+  elif inter == gremio:
+    empate += 1
+  else:
+    vitoriag += 1
+  print('Novo grenal (1-sim 2-nao)')
+  resposta = int(input())
+  if resposta == 2:
+    print('%d grenais' % (vitoriai + vitoriag + +empate))
+    print('Inter:%d' % vitoriai)
+    print('Gremio:%d' % vitoriag)
+    print('Empates:%d' % empate)
+    if vitoriai > vitoriag:
+      print('Inter venceu mais')
+    elif vitoriag > vitoriai:
+      print('Gremio venceu mais')
+    else:
+      print('Nao houve vencedor')
+    break
