@@ -1,0 +1,3 @@
+for I in range (0,21,2):
+  for J in range (1,4):
+    print ("I=%g J=%g" % (I/10, (I/10 + J)))
