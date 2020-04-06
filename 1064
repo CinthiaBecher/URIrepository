@@ -1,0 +1,12 @@
+i = 0
+numeros = 0
+positivos = 0
+while i < 6: 
+  n =  float(input())
+  if n > 0:
+    positivos = positivos + 1 
+    numeros = numeros + n
+  i = i + 1 
+print ("%d valores positivos" % (positivos))
+media = numeros / positivos
+print ("%.1f" % (media))
