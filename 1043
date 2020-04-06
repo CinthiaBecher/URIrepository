@@ -1,0 +1,13 @@
+numeros = input()
+A, B, C = numeros.split() 
+
+A = float(A)
+B = float(B)
+C = float (C)
+
+if abs(B - C) < A < (B + C) and abs(A - C) < B < (A + C) and abs(A - B) < C < (A + B):
+  P = A + B + C
+  print ("Perimetro = %.1f" % (P))
+else:
+  AREA = ((A + B) * C)/2
+  print ("Area = %.1f" % (AREA))
