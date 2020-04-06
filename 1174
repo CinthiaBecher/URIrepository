@@ -1,0 +1,6 @@
+posição = -1
+for i in range(100):
+  valores = float(input())
+  posição = posição + 1
+  if valores <= 10:
+    print('A[%d] = %.1f' % (posição, valores))
