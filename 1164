@@ -1,0 +1,17 @@
+numerodetestes = int(input())
+i = 0
+
+while i < numerodetestes:
+  x= 1
+  soma = 0
+  n = int(input()) 
+  while x < n:
+    mod = n%x
+    if mod == 0:
+      soma = soma + x
+    x = x + 1
+  if soma == n:
+    print ("%d eh perfeito" % (n))
+  else:
+    print ("%d nao eh perfeito" % (n)) 
+  i = i + 1
