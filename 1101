@@ -1,0 +1,15 @@
+while True:
+  M, N = input().split()
+  M = int(M)
+  N = int(N)
+  if M <=0 or N <= 0:
+   break
+  menor = min (M, N)
+  maior = max (M, N)
+  soma = menor
+  print (menor, end=" ")
+  while menor < maior: 
+    print (menor + 1, end=" ")
+    menor = menor + 1 
+    soma = soma + menor
+  print ("Sum=%d" %(soma))
