@@ -1,0 +1,25 @@
+T = int(input())
+
+for i in range(T):
+  PA, PB, G1, G2= input().split()
+  PA = int(PA)
+  PB = int(PB)
+  G1 = float(G1)
+  G2 = float(G2)
+  
+  anos = 0
+  
+  while (PA<=PB):
+    xPA = int(PA * (G1/100))
+    xPB = int(PB * (G2/100))
+    PA = PA + xPA
+    PB = PB + xPB
+    anos += 1
+
+    if anos > 100:
+      break
+  
+  if anos > 100:
+    print('Mais de 1 seculo.')
+  else:
+    print('%d anos.' % anos)
