@@ -1,0 +1,14 @@
+N = int(input())
+
+for i in range(N):
+    letras = input()
+    N = int(input())
+    x = ''
+    for l in letras:
+      posicao = ord(l)-N
+
+      if(posicao < 65):
+        x += chr(91-(65-posicao))
+      else:
+        x += chr(ord(l)-N)
+    print(x)
