@@ -1,0 +1,11 @@
+i = 1
+maior = -1
+posição = 0
+while i <= 100: 
+  n =  int(input())
+  if  n > maior:
+    maior = n
+    posição = i
+  i = i + 1 
+print (maior)
+print (posição)
