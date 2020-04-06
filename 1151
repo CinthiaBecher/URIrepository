@@ -1,0 +1,16 @@
+N = int(input())
+
+if N >= 1:
+  print('0', end='')
+if N>= 2:
+  print(' 1', end='')
+
+num1=0
+num2=1
+
+for i in range(3,N+1):
+  soma = num1+num2
+  num1 = num2
+  num2 = soma
+  print(' %d' % (soma), end='')
+print('')
