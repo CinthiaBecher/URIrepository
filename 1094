@@ -1,0 +1,30 @@
+i = 0 
+n = int(input())
+coelho = 0
+sapo = 0
+rato = 0
+cobaias = 0
+
+while i < n: 
+  quantia, tipo = input().split()
+  quantia = int(quantia)
+  tipo = str(tipo)
+  cobaias = cobaias + quantia
+  if tipo == "C":
+    coelho = coelho + quantia
+  if tipo == "R":
+    rato = rato + quantia
+  if tipo == "S":
+    sapo = sapo +  quantia
+  i = i + 1
+
+percentcoelhos = (100*coelho)/cobaias
+percentratos = (100*rato)/cobaias
+percentsapos = (100*sapo)/cobaias
+print("Total: %d cobaias" % (cobaias))
+print("Total de coelhos: %d" % (coelho))
+print("Total de ratos: %d" % (rato))
+print("Total de sapos: %d" % (sapo))
+print("Percentual de coelhos: %.2f %%" % (percentcoelhos))
+print("Percentual de ratos: %.2f %%" % (percentratos))
+print("Percentual de sapos: %.2f %%" % (percentsapos))
