@@ -1,0 +1,24 @@
+N = int(input())
+
+lista = input().split()
+
+num2 = 0
+num3 = 0
+num4 = 0
+num5 = 0
+
+for i in lista:
+  i = int(i)
+  if i % 2 ==0:
+    num2 = num2+1
+  if i % 3 ==0:
+    num3 = num3+1
+  if i % 4 ==0:
+    num4 = num4+1
+  if i % 5 ==0:
+    num5 = num5+1
+
+print('%d Multiplo(s) de 2' % num2)
+print('%d Multiplo(s) de 3' % num3)
+print('%d Multiplo(s) de 4' % num4)
+print('%d Multiplo(s) de 5' % num5)
