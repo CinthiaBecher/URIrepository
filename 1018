@@ -1,0 +1,23 @@
+valor = int(input())
+if (valor > 0 and valor < 1000000):
+  print (valor)
+  nota100 = valor// 100
+  print ( "%d nota(s) de R$ 100,00" %nota100)
+  x1 = valor % 100
+  nota50 = x1//50
+  print ( "%d nota(s) de R$ 50,00" %nota50)
+  x2 = x1 % 50
+  nota20 = x2//20
+  print ( "%d nota(s) de R$ 20,00" %nota20)
+  x3 = x2 % 20 
+  nota10 = x3/10
+  print ( "%d nota(s) de R$ 10,00" %nota10)
+  x4 = x3 % 10 
+  nota5 = x4//5
+  print ( "%d nota(s) de R$ 5,00" %nota5)
+  x5 = x4 % 5 
+  nota2 = x5//2
+  print ( "%d nota(s) de R$ 2,00" %nota2)
+  x6 = x5 % 2 
+  nota1 = x6//1
+  print ( "%d nota(s) de R$ 1,00" %nota1)
