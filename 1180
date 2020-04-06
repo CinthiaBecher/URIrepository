@@ -1,0 +1,13 @@
+N = int(input())
+valores = input().split()
+
+menor = int(valores[0])
+posição = 0
+for p, n in enumerate(valores):
+  n = int(n)
+  if n < menor:
+    posição = p
+    menor = n
+
+print('Menor valor: %d' % (menor))
+print('Posicao: %d' % (posição))
