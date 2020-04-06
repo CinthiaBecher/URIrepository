@@ -1,0 +1,12 @@
+notaA = float(input())
+while notaA < 0 or notaA > 10:
+  print ("nota invalida")
+  notaA = float(input())
+
+notaB =  float(input())
+while notaB < 0 or notaB > 10:
+  print ("nota invalida")
+  notaB =  float(input())
+
+media = (notaA + notaB) / 2 
+print ("media = %.2f" % (media))
