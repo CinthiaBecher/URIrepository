@@ -1,0 +1,17 @@
+numerodetestes = int(input())
+i = 0
+
+while i < numerodetestes:
+  x= 1
+  soma = 0
+  n = int(input()) 
+  while x <= n:
+    mod = n%x
+    if mod == 0:
+      soma = soma + 1
+    x = x + 1
+  if soma == 2:
+    print ("%d eh primo" % (n))
+  else:
+    print ("%d nao eh primo" % (n)) 
+  i = i + 1
