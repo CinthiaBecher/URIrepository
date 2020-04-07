@@ -1,0 +1,13 @@
+def calculo_diferenca(A, B, C, D):
+  return (A * B - C * D)
+
+def principal():
+  A = int(input())
+  B = int(input())
+  C = int(input())
+  D = int(input())
+
+  diferenca = calculo_diferenca(A, B, C, D)
+  return ('DIFERENCA = %d' % (diferenca))
+
+print (principal())
