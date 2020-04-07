@@ -1,0 +1,10 @@
+def calculo(r):
+  return ((4/3) * 3.14159 * (r**3))
+
+def principal():
+  r = int(input())
+  volume = calculo(r)
+  return ('VOLUME = %.3f' % volume)
+
+res = principal()
+print(res)
