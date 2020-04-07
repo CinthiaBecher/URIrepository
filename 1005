@@ -1,0 +1,12 @@
+def calculo_media (A, B):
+  media = ((A * 3.5) + (B * 7.5)) / 11
+  return(media)
+
+def principal ():
+  A = float(input())
+  B = float(input())
+  media = calculo_media(A, B)
+  return ('MEDIA = %.5f' % media)
+
+
+print (principal())
