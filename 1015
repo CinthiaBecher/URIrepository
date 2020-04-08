@@ -1,0 +1,14 @@
+def le_dois_valores():
+  x, y = input().split()
+  x = float(x)
+  y = float(y)
+  return x,y
+
+def formula(x1,x2,y1,y2):
+  return  ((x2 - x1)**2 + (y2 - y1)**2)**0.5
+
+x1,y1 = le_dois_valores()
+x2,y2 = le_dois_valores()
+distancia = formula(x1,x2,y1,y2)
+
+print('%.4f' % distancia)
