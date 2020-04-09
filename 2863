@@ -1,0 +1,16 @@
+def principal():
+  T = int(input())
+  melhortempo = 100.0
+  for i in range(T):
+    tempo = float(input())
+    if tempo < melhortempo:
+      melhortempo = tempo
+  return (melhortempo)
+
+
+while True:
+  try:
+    print(principal())
+
+  except EOFError:
+    break
