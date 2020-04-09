@@ -1,0 +1,21 @@
+def retornaString():
+  codigo, quantidade = input().split()
+  codigo = int(codigo)
+  quantidade = int(quantidade)
+
+  if codigo == 1:
+    return 'Total: R$ %.2f' % (quantidade * 4.00
+  )
+  if codigo == 2:
+    return 'Total: R$ %.2f' % (quantidade * 4.50)
+
+  if codigo == 3:
+    return 'Total: R$ %.2f' % (quantidade * 5.00)
+
+  if codigo == 4:
+    return 'Total: R$ %.2f' % (quantidade * 2.00)
+
+  if codigo == 5:
+    return 'Total: R$ %.2f' % (quantidade * 1.50)
+
+print (retornaString())
